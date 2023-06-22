@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="zh-cmn-Hans"><head>
+	<meta charset="UTF-8">
+	<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg"> -->
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<link rel="apple-touch-icon" href="favicon_1.ico">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>GoGPT</title>
+  <script type="module" crossorigin src="js/index-54a3230b.js"></script>
+  <link rel="stylesheet" href="css/index-d054c7f4.css">
+</head>
+
+<body class="dark_bg_color3">
+	<div id="app">
+		<style>
+			.loading-wrap {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+			}
+			.logo_name {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 20px;
+			}
+			.logo_name img {
+				width: 100px;
+				height: 100px;
+			}
+			.logo_name span {
+				font-size: 20px;
+				font-weight: bolder;
+				color: #7269ef;
+			}
+
+			.balls {
+				width: 4em;
+				display: flex;
+				flex-flow: row nowrap;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+			.balls div {
+				width: 0.8em;
+				height: 0.8em;
+				border-radius: 50%;
+				background-color: #7269ef;
+			}
+
+			.balls div:nth-of-type(1) {
+				transform: translateX(-100%);
+				animation: left-swing 0.5s ease-in alternate infinite;
+			}
+
+			.balls div:nth-of-type(3) {
+				transform: translateX(-95%);
+				animation: right-swing 0.5s ease-out alternate infinite;
+			}
+
+			@keyframes left-swing {
+
+				50%,
+				100% {
+					transform: translateX(95%);
+				}
+			}
+
+			@keyframes right-swing {
+				50% {
+					transform: translateX(-95%);
+				}
+
+				100% {
+					transform: translateX(100%);
+				}
+			}
+
+			@media (prefers-color-scheme: dark) {
+				body {
+					background: #121212;
+				}
+			}
+		</style>
+		<div class="loading-wrap">
+			<div class="logo_name">
+				<img src="images/logo_zs_208.png" alt>
+				<span>GoGPT</span>
+			</div>
+			<div class="balls">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+	
+
+
+</body></html>
